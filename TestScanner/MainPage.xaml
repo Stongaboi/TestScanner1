@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              xmlns:gv="clr-namespace:BarcodeScanner.Mobile;assembly=BarcodeScanner.Mobile.Maui"
+              
+             xmlns:camera="clr-namespace:Camera.MAUI;assembly=Camera.MAUI"
+             x:Class="TestScanner.MainPage">
+
+    <VerticalStackLayout Padding="20" Spacing="20">
+        <!-- Button to Trigger Photo Capture -->
+        <Button Text="Take Photo"
+                Clicked="OnTakePhotoClicked"
+                HorizontalOptions="Center"
+                x:Name="TakePhotoButton"/>
+
+        <!-- Label to Show Results -->
+        <Label x:Name="ResultLabel"
+               Text="Captured photo will be processed here"
+               HorizontalOptions="Center"
+               VerticalOptions="Center" />
+    </VerticalStackLayout>
+
+</ContentPage>
